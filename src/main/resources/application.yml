@@ -2,6 +2,19 @@ micronaut:
   application:
     name: mn281
   metrics:
+    enabled: true
+    binders:
+      web:
+        enabled: true
+      netty:
+        enabled: true
+        queues:
+          enabled: true
+        channels:
+          enabled: true
+        bytebuf-allocators:
+          enabled: true
+
     export:
       prometheus:
         enabled: true
